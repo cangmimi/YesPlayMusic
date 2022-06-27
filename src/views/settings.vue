@@ -33,10 +33,7 @@
         </div>
         <div class="right">
           <select v-model="lang">
-            <option value="en">🇬🇧 English</option>
-            <option value="tr">🇹🇷 Türkçe</option>
             <option value="zh-CN">🇨🇳 简体中文</option>
-            <option value="zh-TW">繁體中文</option>
           </select>
         </div>
       </div>
@@ -688,11 +685,7 @@
       </div>
 
       <div class="footer">
-        <p class="author"
-          >MADE BY
-          <a href="http://github.com/qier222" target="_blank">QIER222</a></p
-        >
-        <p class="version">v{{ version }}</p>
+        
 
         <a
           v-if="!isElectron"

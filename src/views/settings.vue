@@ -688,7 +688,7 @@
         <p class="version">{{ version }}</p>
         <a
           v-if="!isElectron"
-          href="https://vercel.com/"
+          href="https://vercel.com/?utm_source=ohmusic&utm_campaign=oss"
         >
           <img
             height="36"

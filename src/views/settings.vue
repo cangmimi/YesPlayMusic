@@ -685,7 +685,7 @@
       </div>
 
       <div class="footer">
-        
+        <p class="version">{{ version }}</p>
 
         <a
           v-if="!isElectron"

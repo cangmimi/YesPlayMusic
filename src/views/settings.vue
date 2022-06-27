@@ -685,16 +685,7 @@
       </div>
 
       <div class="footer">
-        <p class="version">{{ version }}</p>
-        <a
-          v-if="!isElectron"
-          href="https://vercel.com/?utm_source=ohmusic&utm_campaign=oss"
-        >
-          <img
-            height="36"
-            src="https://www.datocms-assets.com/31049/1618983297-powered-by-vercel.svg"
-          />
-        </a>
+        
       </div>
     </div>
   </div>
@@ -739,17 +730,11 @@ export default {
   },
   computed: {
     ...mapState(['player', 'settings', 'data', 'lastfm']),
-    isElectron() {
-      return process.env.IS_ELECTRON;
-    },
     isMac() {
       return /macintosh|mac os x/i.test(navigator.userAgent);
     },
     isLinux() {
       return process.platform === 'linux';
-    },
-    version() {
-      return pkg.version;
     },
     showUserInfo() {
       return isLooseLoggedIn() && this.data.user.nickname;
